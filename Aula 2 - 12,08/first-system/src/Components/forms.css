@@ -1,0 +1,28 @@
+.form-control {
+    /*Style*/
+    color: white;
+
+
+    /*Formatação*/
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+
+}
+
+.form-control input {
+    display: flex;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white
+    
+};
+
+.form-control button {
+    background: none;
+    color: goldenrod;
+
+}

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    font-family: "Spectral", serif;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: spec;
+}
+
+.vl {
+    border-left: 1px solid goldenrod;
+    height: 600px;
+}
+
+hr {
+    background-image: linear-gradient(90deg, goldenrod, transparent);
+    border: 0;
+    height: 1px;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+input {
+    border: 1px solid goldenrod;
+}
+
+button {
+    padding: 25px 30px;
+    background-color: #000000;
+    color: goldenrod;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: goldenrod;
+    color: #050801;
+    box-shadow: 0 0 5px goldenrod,
+        0 0 25px goldenrod,
+        0 0 50px goldenrod,
+        0 0 200px goldenrod;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+
+button:hover {
+    background-color: goldenrod;
+    transition: 0.5s;
+
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid goldenrod;
+    transition: 0.6s;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
+
+}
+
+li {
+    list-style: none;
+
+    
+}
+
+.lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.del{
+    color: red;
+}
+
+.del:hover{
+    background-color: red;
+    box-shadow: 0 0 5px black;
+    animation: blinker 1.5s linear infinite;
+   
+  }
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

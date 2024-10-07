@@ -1,0 +1,22 @@
+.banner {
+    border: 1px solid white;
+    margin: auto;
+    max-width: 1000px;
+    height: 110px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    color: white;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 15px;
+}
